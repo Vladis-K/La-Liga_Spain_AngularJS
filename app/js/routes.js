@@ -13,5 +13,7 @@ app.config(function($routeProvider) {
         templateUrl : "templates/page_03.html",
         controller : "thirdCtrl"
     })
-    .otherwise({redirectTo: "/"});;
+    .otherwise({
+        redirectTo: "/"
+    });;
 });
