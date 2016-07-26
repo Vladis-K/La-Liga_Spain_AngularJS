@@ -12,7 +12,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Mendizorrotza",
       "sponsor":""
    },
    {  
@@ -28,7 +28,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"San Mamés",
       "sponsor":""
    },
    {  
@@ -44,7 +44,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Vicente Calderón",
       "sponsor":""
    }, 
    {  
@@ -76,12 +76,12 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Balaídos",
       "sponsor":""
    },
    {  
       "country":"Spain",
-      "club":"Deportivo",
+      "club":"Deportivo La Coruña",
       "euroCups":"",
       "imageUrl":"img/spain/deportivo.png",
       "manager":"",
@@ -92,7 +92,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Riazor",
       "sponsor":""
    },
    {  
@@ -108,7 +108,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Ipurua",
       "sponsor":""
    },
    {  
@@ -124,7 +124,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"RCDE Stadium",
       "sponsor":""
    },
    {  
@@ -140,7 +140,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Nuevo Los Cármenes",
       "sponsor":""
    },
    {  
@@ -156,7 +156,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Gran Canaria",
       "sponsor":""
    },
    {  
@@ -172,7 +172,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Butarque",
       "sponsor":""
    },
    {  
@@ -188,7 +188,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":" La Rosaleda",
       "sponsor":""
    },
    {  
@@ -204,7 +204,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"El Sadar",
       "sponsor":""
    },
    {  
@@ -220,7 +220,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Benito Villamarín",
       "sponsor":""
    },
    {  
@@ -236,7 +236,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Santiago Bernabéu",
       "sponsor":""
    },
    {  
@@ -252,7 +252,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Anoeta",
       "sponsor":""
    },
    {  
@@ -268,7 +268,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Ramón Sánchez Pizjuán",
       "sponsor":""
    },
    {  
@@ -284,7 +284,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"El Molinón",
       "sponsor":""
    },
    {  
@@ -300,7 +300,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"Mestalla",
       "sponsor":""
    },
    {  
@@ -316,7 +316,7 @@
       "l":"",
       "gf":"",
       "ga":"",
-      "stadium":"",
+      "stadium":"El Madrigal",
       "sponsor":""
    }
 ]
