@@ -2,12 +2,11 @@
 app.controller("mainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
 	
 
-	$scope.description = "La Liga";
+	$scope.description = "Standings";
 
 	var date = new Date();
 	$scope.today = date;
-
-	$http.get('clubs/barcelona.json').success(function(data){
+	$http.get('clubs/clubs.json').success(function(data){
 			$scope.infoClub = data;
 	});
 
@@ -15,20 +14,17 @@ app.controller("mainController", [ '$scope', '$http', '$location', function ($sc
 
 app.filter('euroCups', function(){
 	return function(input){
-
 		// console.log(input);
-
 	}
 })
 
 	
 
 app.controller("secondCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
-    $scope.msg = "Text of Link";
-
+    $scope.msg = "Schedule";
 }]);
 
 
 app.controller("thirdCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
-    $scope.msg = "Text of Link2";
+    $scope.msg = "Schedule";
 }]);

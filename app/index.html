@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content=""/>
     <meta name="Description" content=""/>
-    <title>Task</title>
+    <title>La Liga Spain</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -28,18 +28,47 @@
  <body>
 
 
-<p>
-<a href="#/">Main</a>
-</p>
-<p><a href="#/link1">Link 1</a>
-</p>
-<p><a href="#/link2">Link 2</a>
-</p>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/">La Liga</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#/link1">Calendar</a></li>
+        <li><a href="#/link2">News</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+        </form>
 
+
+    </div>
+
+
+
+  </div>
+</nav>
+
+<!-- 
+<div class="">
+  <div class="">
+    <span><a href="#/">Main</a></span>
+    <span><a href="#/link1">Link 1</a></span>
+    <span><a href="#/link2">Link 2</a></span>
+  </div>
+</div>
+ -->
 
 <div ng-view></div>
-
-
 
 
 

@@ -1,19 +1,63 @@
-html, body
-	background: #000
-	font-family: Arial, sans-serif
-	margin-left: 50px
-	margin-top: 20px
+$font-stack: Arial, sans-serif
+$border-outer: 1px solid #949494
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+html
+	font-family: $font-stack
+	margin: 0
 	padding: 0
 
-tr
-	th
-	td
-	background-color: lightblue
+body
+	font-family: $font-stack
+	padding-top: 70px
+	margin: 0
+
+*
+	+border-radius(0)
+
+table
+	border: $border-outer
+	margin: 0
+	padding: 0	
+
+tr th
+	text-align: center
+	color: #595959
+	height: 20px
+	margin: 0
+	padding: 0	
+
+.table
+	thead
+		tr
+			th
+				text-align: left
+				color: #595959
+				height: 30px
+				margin: 0
+				padding: 5px
+				background-color: #FFDD00
+.table
+	tbody
+		tr
+			td 
+				text-align: left
+				color: #595959
+				height: 15px
+				margin: 0
+				padding: 5px		
+
 
 td img
-	height: 25px
+	height: 20px
+	margin: 0
+	padding: 0	
 
-input.ng-invalid
-	border: 1px solid red
+
 
 

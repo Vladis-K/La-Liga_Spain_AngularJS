@@ -13,7 +13,7 @@ app.config( function($routeProvider) {
         templateUrl : "templates/page_03.html",
         controller : "thirdCtrl"
     })
-    // .when("/clubs/:fid", {
+    // .when("/clubs/:id", {
     //     templateUrl : "templates/page_schedule.html",
     //     controller : "scheduleController"
     // })

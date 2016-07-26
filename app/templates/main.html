@@ -1,22 +1,13 @@
-
-
 <div class="container">
   <div class="col-sm-8">
-    <p>{{ description | euroCups}}</p>
+    <p>{{description}}</p>
     <p>{{ today | date:'longDate' }}</p>
     
-    <form action="">
-      <input type="text" class="form-control" placeholder="Search..." ng-model="search">
-    </form>
-
-    <p>
-      <a class="btn btn-default" href="#/clubs/{{f.id}}" role="button">Click!</a>
-    </p>
-    <table class="table table-bordered">
+    <table class="table table-striped">
       <thead>
         <tr>
-          <th>Logo</th>
-          <th>Country</th>
+          <th></th>
+          <th>Emblem</th>
           <th>Club</th>
           <th>Stadium</th>
           <th>Sponsor</th>
@@ -25,8 +16,8 @@
 
       <tbody>
         <tr ng-repeat="f in infoClub">
+          <td>{{ 0 }}</td>
           <td><img ng-src="{{f.imageUrl}}" alt="{{f.club}}"></td>
-          <td>{{f.country  }}</td>
           <td>{{f.club}}</td>
           <td>{{f.stadium}}</td>
           <td>{{f.sponsor}}</td>

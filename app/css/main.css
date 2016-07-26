@@ -1,15 +1,45 @@
-html, body {
-  background: #fff;
+html {
   font-family: Arial, sans-serif;
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 0;
   padding: 0; }
 
-tr {
-  background-color: lightblue; }
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+  margin: 0; }
+
+* {
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+table {
+  border: 1px solid #949494;
+  margin: 0;
+  padding: 0; }
+
+tr th {
+  text-align: center;
+  color: #595959;
+  height: 20px;
+  margin: 0;
+  padding: 0; }
+
+.table thead tr th {
+  text-align: left;
+  color: #595959;
+  height: 30px;
+  margin: 0;
+  padding: 5px;
+  background-color: #FFDD00; }
+
+.table tbody tr td {
+  text-align: left;
+  color: #595959;
+  height: 15px;
+  margin: 0;
+  padding: 5px; }
 
 td img {
-  height: 25px; }
-
-input.ng-invalid {
-  border: 1px solid red; }
+  height: 20px;
+  margin: 0;
+  padding: 0; }

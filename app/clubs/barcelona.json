@@ -1,12 +1,6 @@
 [  
    {  
-      "country":"Spain",
       "club":"Barcelona",
-      "imageUrl":"img/spain/barcelona.jpg",
-      "stadium":"Camp Nou",
-      "manager":"Luis Enrique",
-      "id":"barca",
-      "euroCups":"true",
       "player":[  
          {  
             "name":"Marc-André",
@@ -30,6 +24,6 @@
             "number":"9"
          }
       ],
-      "sponsor":"nike"
+      "sponsor":"Nike"
    }
 ]
