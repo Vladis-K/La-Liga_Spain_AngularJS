@@ -7,8 +7,18 @@ app.controller("mainController", [ '$scope', '$http', '$location', function ($sc
 	var date = new Date();
 	$scope.today = date;
 	$http.get('clubs/clubs.json').success(function(data){
+
 			$scope.infoClub = data;
+
+			$scope.list = "";
+			for (var i = 0; i<= $scope.infoClub.length; i++) {
+					 $scope.list += $scope.list;
+
+					 console.log(i);
+			};
+
 	});
+
 
 }]);
 

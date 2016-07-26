@@ -1,6 +1,29 @@
 <div class="container">
 	<div class="col-sm-8">
 		<h2>Schedule</h2>
-			<p>{{msg}}</p>
+
+
+	<table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Emblem</th>
+          <th>Club</th>
+          <th>Stadium</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr ng-repeat="f in infoClub">
+
+          <td></td>
+          <td><img ng-src="{{f.imageUrl}}" alt="{{f.club}}"></td>
+          <td><span>{{f.club}</span>}</td>
+          <td><span>{{f.stadium}}</span></td>
+          <td><span>{{f.sponsor}}</span></td>
+        </tr>
+      </tbody>
+    </table>
 	</div>
 </div>
