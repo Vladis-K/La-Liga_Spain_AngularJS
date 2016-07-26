@@ -1,8 +1,8 @@
 
 
 <div class="container">
-    <div class="col-sm-8">
-    <p>{{ description }}</p>
+  <div class="col-sm-8">
+    <p>{{ description | euroCups}}</p>
     <p>{{ today | date:'longDate' }}</p>
     
     <form action="">
@@ -10,10 +10,7 @@
     </form>
 
     <p>
-      <a class="btn btn-default" href="#/clubs/{{infoClub.id}}" role="button">Click!</a>
-    </p>
-        <p>
-      <a class="btn btn-default" href="#/clubs/{{infoClub.id}}" role="button">Phones!</a>
+      <a class="btn btn-default" href="#/clubs/{{f.id}}" role="button">Click!</a>
     </p>
     <table class="table table-bordered">
       <thead>
@@ -29,7 +26,7 @@
       <tbody>
         <tr ng-repeat="f in infoClub">
           <td><img ng-src="{{f.imageUrl}}" alt="{{f.club}}"></td>
-          <td>{{f.country}}</td>
+          <td>{{f.country  }}</td>
           <td>{{f.club}}</td>
           <td>{{f.stadium}}</td>
           <td>{{f.sponsor}}</td>
@@ -39,14 +36,6 @@
 
 
   </div>
-      
+  
   
 </div>
-
-<!--       <ul>
-          <li ng-repeat="f in infoClubs">
-            <p>{{f.country}}<br>
-            {{f.club}}</p>
-          </li>
-        </ul>
- -->

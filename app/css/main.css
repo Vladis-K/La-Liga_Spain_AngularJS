@@ -10,3 +10,6 @@ tr {
 
 td img {
   height: 25px; }
+
+input.ng-invalid {
+  border: 1px solid red; }

@@ -13,19 +13,22 @@ app.controller("mainController", [ '$scope', '$http', '$location', function ($sc
 
 }]);
 
+app.filter('euroCups', function(){
+	return function(input){
+
+		// console.log(input);
+
+	}
+})
+
+	
+
 app.controller("secondCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $scope.msg = "Text of Link";
 
 }]);
 
+
 app.controller("thirdCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $scope.msg = "Text of Link2";
 }]);
-
-
-// app.controller("scheduleController", ['$scope', '$http', '$location' '$routeParams', function ($scope, $http, $location, $routeParams) {
-
-//     $scope.msg = "Upcoming";
-//     $scope.infoClubId = $routeParams.infoClubId;
-
-// }]);

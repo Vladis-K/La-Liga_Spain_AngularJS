@@ -6,6 +6,7 @@
       "stadium":"Camp Nou",
       "manager":"Luis Enrique",
       "id":"barca",
+      "euroCups":"true",
       "player":[  
          {  
             "name":"Marc-André",

@@ -1,5 +1,5 @@
 
-app.config(function($routeProvider) {
+app.config( function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "templates/main.html",
@@ -13,6 +13,10 @@ app.config(function($routeProvider) {
         templateUrl : "templates/page_03.html",
         controller : "thirdCtrl"
     })
+    // .when("/clubs/:fid", {
+    //     templateUrl : "templates/page_schedule.html",
+    //     controller : "scheduleController"
+    // })
     .otherwise({
         redirectTo: "/"
     });;
