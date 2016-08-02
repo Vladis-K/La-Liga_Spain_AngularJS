@@ -1,5 +1,5 @@
 
-app.controller("mainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
+app.controller("MainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
 	
 
 	$scope.description = "Season 2016/2017";
@@ -9,7 +9,6 @@ app.controller("mainController", [ '$scope', '$http', '$location', function ($sc
 	$http.get('clubs/clubs.json').success(function(data){
 
 			$scope.infoClub = data;
-
 	});
 
 
@@ -23,11 +22,14 @@ app.filter('euroCups', function(){
 
 	
 
-app.controller("secondCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+app.controller("SecondCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $scope.msg = "Schedule";
 }]);
 
 
-app.controller("thirdCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+app.controller("ThirdCtrl", ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $scope.msg = "Schedule";
+
+
+
 }]);
