@@ -6,17 +6,17 @@ app.config( function($routeProvider) {
         controller : "MainController"
     })
     .when("/link1", {
-        templateUrl : "templates/page_02.html",
-        controller : "SecondCtrl"
+        templateUrl : "templates/partials/page_02.html",
+        controller : "SecondController"
     })
     .when("/link2", {
-        templateUrl : "templates/page_03.html",
-        controller : "ThirdCtrl"
+        templateUrl : "templates/partials/page_03.html",
+        controller : "ThirdController"
     })
-    // .when("/clubs/:id", {
-    //     templateUrl : "templates/page_schedule.html",
-    //     controller : "scheduleController"
-    // })
+    .when("/info/:id", {
+        templateUrl : "templates/partials/info.html",
+        controller : "InfoController" 
+    })
     .otherwise({
         redirectTo: "/"
     });;

@@ -17,11 +17,11 @@
 
       <tbody>
         <tr ng-repeat="f in infoClub">
-          <td>{{$index+1 }}</td>
+          <td>{{$index}}</td>
           <td><img ng-src="{{f.imageUrl}}" alt="{{f.club}}"></td>
-          <td>{{f.club}}</td>
+          <td><a href="/#/info/{{$index}}">{{f.club}}</a></td>
           <td>{{f.stadium}}</td>
-          <td></td>
+          <td>Tv</td>
           <td>Buy</td>
         </tr>
       </tbody>
