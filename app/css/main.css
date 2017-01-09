@@ -4,16 +4,67 @@ html {
   padding: 0; }
 
 body {
+  background-color: #EDEEF0;
   font-family: Arial, sans-serif;
   padding-top: 70px;
+  margin: 0;
+  font-weight: 400; }
+
+nav.navbar {
+  height: 50px;
+  background-color: #0f0f0f; }
+
+.navbar-inverse .navbar-nav > li > a {
+  font-size: 15px;
+  color: #FFFFFF; }
+
+ul.navbar-nav {
+  bottom: 0;
+  padding: 0;
   margin: 0; }
 
-*, button {
+input.form-control, button {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
+.sidenav {
+  border: 1px solid #3d5afe;
+  padding-left: 0;
+  padding-right: 0; }
+
+object, iframe {
+  width: 100%;
+  height: 350px; }
+
+li > button.btn {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  height: 42px;
+  background-color: #FFFFFF; }
+
+span button.btn {
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+div.well {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  max-width: 100%;
+  height: 174px;
+  margin-bottom: 2px;
+  background-color: #FFFFFF; }
+
+button {
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+div.links {
+  background-color: #FFCC00; }
+
 table {
-  border: 1px solid #949494;
+  border: 1px solid #905bd8;
   margin: 0;
   padding: 0; }
 

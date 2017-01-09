@@ -1,9 +1,12 @@
-<div class="container">
+<div class="container" ng-controller="MainController" >
   <div class="col-sm-8">
+
+    <!--<div class="kitten" back-img="/img/background/02.jpg" >Hello there</div>-->
+    <!--<div class="kitten" ng-style="{ 'background-image': 'url(' + bg + ')' }"></div>-->
+
     <p>{{description}}</p>
     <p>{{ today | date:'longDate' }}</p>
-    
-    <table class="table table-hover table-striped">
+    <table class="table">
       <thead>
         <tr>
           <th></th>
@@ -16,8 +19,8 @@
       </thead>
 
       <tbody>
-        <tr ng-repeat="f in infoClub">
-          <td>{{$index}}</td>
+        <tr ng-repeat="f in infoClub | filter:test">
+          <td>{{$index+1}}</td>
           <td><img ng-src="{{f.imageUrl}}" alt="{{f.club}}"></td>
           <td><a href="/#/info/{{$index}}">{{f.club}}</a></td>
           <td>{{f.stadium}}</td>
