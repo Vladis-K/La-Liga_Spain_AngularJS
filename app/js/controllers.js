@@ -1,8 +1,7 @@
-
 app.controller("MainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
 	
 	$scope.description = "Season 2016/2017";
-	$scope.bg = '/img/background/02.jpg';
+	$scope.bg = 'img/background/02.jpg';
 
 
 	var date = new Date();
@@ -38,7 +37,7 @@ app.controller("SecondController", ['$scope', '$http', '$location', function ($s
 
 
 app.controller("ThirdController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
-    $scope.msg = "Video";
+    $scope.msg = "Today events";
 }]);
 
 

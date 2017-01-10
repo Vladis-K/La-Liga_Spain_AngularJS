@@ -1,9 +1,12 @@
 $font-stack: Arial, sans-serif
 $border-outer: 1px solid #905bd8
+$font-description-color: #2B2C2D
 $font-add-color: #FFCC00
-$back-color: #1E1E1E
+$font-blog-color: #6C6D6F
+$back-color: #333333
 $ground-color: #EDEEF0
 $content-color: #FFFFFF
+$frame-color: #E4E0E9
 
 =border-radius($radius)
   border-radius: $radius
@@ -18,58 +21,103 @@ body
 	font-family: $font-stack
 	padding-top: 70px
 	margin: 0
-	font-weight: 400
+
+button
+	border-radius: 0
 
 //Navbar
 
-nav.navbar
-	height: 50px
-	background-color: #0f0f0f
+.navbar
+	background-color: $back-color
+	margin-bottom: 0
+	box-shadow: 0px 8px 20px -10px rgba(20,20,20,1)
 
 .navbar-inverse .navbar-nav > li > a
-		font-size: 15px
-		color: $content-color
+	font-size: 16px
+	color: $content-color
+	font-weight: 500
 
 ul.navbar-nav
 	bottom: 0
 	padding: 0
 	margin: 0
 
-input.form-control, button
-	border-radius: 0
-	//height: 25px
-
 .sidenav
-	border: 1px solid #3d5afe
+	//border: 1px solid #3d5afe
 	padding-left: 0
 	padding-right: 0
+
+.results
+	margin:
+	height: 60px
+	background-color: $content-color
+	margin-bottom: 10px
+	border: 1px solid #E4E0E9
+
+.results
+	div:not(:last-child)
+		height: 100%
+		border-right: 1px solid $frame-color
+	div:last-child
+		height: inherit
+		border-right: none
+
+div.stream_main
+	margin: 0 0 20px 0
+	padding: 0
 
 object, iframe
 	width: 100%
 	height: 350px
+
 
 li>button.btn
 	border-radius: 0
 	height: 42px
 	background-color: $content-color
 
-span button.btn
-	border-top-right-radius: 0
-	border-bottom-right-radius: 0
+//News Aside
+
+div.news_title
+	font-weight: 600
+	color: $font-blog-color
+	text-transform: uppercase
+	margin-bottom: 10px
+
 
 div.well
+	height: auto
+	margin-bottom: 6px
+	padding: 10px
 	border-radius: 0
 	max-width: 100%
-	height: 174px
-	margin-bottom: 2px
 	background-color: $content-color
+	border: 1px solid $frame-color
+	font-size: 12px
+
+div.well
+	aside>figure
+		font-size: 11px
+		font-weight: 600
+		display: inline-block
+		margin-bottom: 10px
+	aside details
+		font-weight: 400
+	aside>div
+		font-weight: 400
+		color: $font-blog-color
+	div>img
+		width: 100%
+		margin-bottom: 5px
+
+
 
 button
 	+border-radius(0)
 
 div.links
 	background-color: #FFCC00
-
+	margin: 0
 
 table
 	border: $border-outer
