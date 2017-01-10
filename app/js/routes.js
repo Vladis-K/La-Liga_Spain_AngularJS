@@ -1,23 +1,26 @@
-
 app.config( function($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl : "templates/main.html",
-        controller : "MainController"
+    // .when("/", {
+    //     templateUrl : "templates/main.htm",
+    //     controller : "MainController"
+    // })
+    .when("/start", {
+            templateUrl : "templates/partials/start.htm",
+            controller : "startController"
+        })
+    .when("/sport", {
+        templateUrl : "templates/partials/sport.htm",
+        controller : "sportController"
     })
-    .when("/link1", {
-        templateUrl : "templates/partials/page_02.html",
-        controller : "SecondController"
+    .when("/more", {
+        templateUrl : "templates/partials/more.htm",
+        controller : "moreController"
     })
-    .when("/link2", {
-        templateUrl : "templates/partials/page_03.html",
-        controller : "ThirdController"
-    })
-    .when("/info/:id", {
-        templateUrl : "templates/partials/info.html",
-        controller : "InfoController" 
-    })
+    // .when("/info/:id", {
+    //     templateUrl : "templates/partials/more.htm",
+    //     controller : "moreController"
+    // })
     .otherwise({
-        redirectTo: "/"
-    });;
+        redirectTo: "/main"
+    });
 });

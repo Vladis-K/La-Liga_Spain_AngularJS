@@ -1,16 +1,11 @@
 
 app.controller("MainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
 	
-	$scope.description = "Season 2016/2017";
-	$scope.bg = '/img/background/02.jpg';
 
 
-	var date = new Date();
-	$scope.today = date;
-	$http.get('clubs/clubs.json').success(function(data){
-			$scope.infoClub = data;
-	});
-
+	// $http.get('clubs/clubs.json').success(function(data){
+	// 	$scope.infoClub = data;
+	// });
 	
 }]);
 
@@ -31,20 +26,23 @@ app.filter('euroCups', function(){
 	}
 })
 
+app.controller("startController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+	$scope.msg = "Video";
+}]);
 
-app.controller("SecondController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+app.controller("sportController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+
     $scope.msg = "News";
+	$scope.description = "Season 2016/2017";
+	//$scope.bg = '/img/background/02.jpg';
+
+	var date = new Date();
+	$scope.today = date;
 }]);
 
 
-app.controller("ThirdController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
-    $scope.msg = "Video";
-}]);
-
-
-app.controller("InfoController", ['$scope', '$routeParams', function ($scope, $routeParams) {
-
-    $scope.msg = "Schedule";
+app.controller("moreController", ['$scope', '$routeParams', function ($scope, $routeParams) {
+    $scope.msg = "More";
     // $scope.f = $scope.infoClub[$routeParams.id]
 
 }]);
