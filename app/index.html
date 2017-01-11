@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content=""/>
     <meta name="Description" content=""/>
-    <title>La Liga Spain</title>
+    <title>Online Sport</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <link rel="shortcut icon" href="img/s-icon.ico" type="image/x-icon">
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css -->
 
@@ -39,10 +39,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li><a href="/#/start">Start</a></li>
+          <li><a href="/#/">Start</a></li>
           <li><a href="/#/sport">Sports</a></li>
-          <li><a href="">Live betting</a></li>
-          <li><a href="/#/more">More</a></li>
+          <li><a href="/#/betting">Live betting</a></li>
+          <li><a href="/#/more">More...</a></li>
+          <li><a href="/#/main">Table</a></li>
       </ul>
         <!--<form>-->
             <!--<div class="form-group">-->
@@ -61,10 +62,7 @@
 
 
 
-
-
 <div ng-view></div>
-
 
 
     <!-- build:js js/vendor.min.js -->
@@ -73,15 +71,17 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/main.min.js -->
-  
+
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/routes.js"></script>
- 
+
+
     <!-- endbuild -->
 
 </body>
