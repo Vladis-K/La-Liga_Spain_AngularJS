@@ -1,7 +1,3 @@
-var app = angular.module('myApp', ['ngRoute','ngAnimate', 'ngTouch', 'ui.bootstrap']);
-
-app.controller("bettingController", [ '$scope', function ($scope) {
-    $scope.msg = "Betting";
-
-}]);
-// var app = angular.module('myApp', ['ngAnimate']);
+ var app = angular.module('myApp', ['ngRoute','ngAnimate', 'ngTouch','ui.bootstrap.tpls']);
+ 
+// var app = angular.module('myApp', ['ngAnimate','ui.bootstrap.tpls','ui.bootstrap']);

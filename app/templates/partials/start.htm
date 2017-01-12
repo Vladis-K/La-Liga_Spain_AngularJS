@@ -17,14 +17,14 @@
 		<div class="container-fluid">
 			<nav class="col-xs-12 col-sm-2 sidenav">
 				<ul class="nav nav-pills nav-stacked">
-					<li><button type="button" class="btn btn-block">Channel 1</button></li>
-					<li><button type="button" class="btn btn-block">Channel 2</button></li>
-					<li><button type="button" class="btn btn-block">Channel 3</button></li>
-					<li><button type="button" class="btn btn-block">Channel 4</button></li>
-					<li><button type="button" class="btn btn-block">Channel 5</button></li>
-					<li><button type="button" class="btn btn-block">Channel 6</button></li>
-					<li><button type="button" class="btn btn-block">Channel 7</button></li>
-					<li><button type="button" class="btn btn-block">Channel 8</button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/Eurosport.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block"><img src="img/channels/canal-sp.png" alt=""></button></li>
 				</ul>
 
 			</nav>
@@ -41,25 +41,63 @@
 					</object>
 				</div>
 
-				<div class="row links" >
-					<div class="btn-group btn-group-justified">
-						<!--max 7 links-->
-						<a href="" class="btn">Link-1</a>
-						<a href="" class="btn">Link-1</a>
-						<a href="" class="btn">Link-1</a>
-						<a href="" class="btn">Link-1</a>
-						<a href="" class="btn">Link-1</a>
-						<a href="" class="btn">Link-1</a>
-					</div>
-				</div>
+				<!--<div class="row links" >-->
+					<!--<div class="btn-group btn-group-justified">-->
+						<!--<a href="" class="btn">Link-1</a>-->
+						<!--<a href="" class="btn">Link-1</a>-->
+						<!--<a href="" class="btn">Link-1</a>-->
+						<!--<a href="" class="btn">Link-1</a>-->
+						<!--<a href="" class="btn">Link-1</a>-->
+						<!--<a href="" class="btn">Link-1</a>-->
+					<!--</div>-->
+				<!--</div>-->
 
 				<div class="row">
 					<div class="col-sm-12">
-						<h2>{{msg}}</h2>
-						<p>Lorem ipsum...</p>
-						<p>Lorem ipsum...</p>
-						<p>Lorem ipsum...</p>
-						<p>Lorem ipsum...</p>
+						<button class="today-date">{{ today | date:'longDate' }}</button>
+						<div ng-init="accordion=1">
+							<p class="accordion" ng-class="{active:accordion==1}">
+								<a href ng-click="accordion = 1">Section 1</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==1">
+								Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+
+							<p class="accordion" ng-class="{active:accordion==2}">
+								<a href ng-click="accordion = 2">Section 2</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==2">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+
+							<p class="accordion" ng-class="{active:accordion==3}">
+								<a href ng-click="accordion = 3">Section 3</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==3">
+								There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form</p>
+						</div>
+						<button class="today-date">{{ today | date:'longDate' }}</button>
+						<div ng-init="accordion=1">
+							<p class="accordion" ng-class="{active:accordion==1}">
+								<a href ng-click="accordion = 1">Section 1</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==1">
+								Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+
+							<p class="accordion" ng-class="{active:accordion==2}">
+								<a href ng-click="accordion = 2">Section 2</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==2">
+								It is a long established fact that a reader will be distracted
+								by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+
+							<p class="accordion" ng-class="{active:accordion==3}">
+								<a href ng-click="accordion = 3">Section 3</a>
+							</p>
+							<p class="accordion-content" ng-show="accordion==3">
+								There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form</p>
+						</div>
 					</div>
 				</div>
 
@@ -120,7 +158,6 @@
 
 		</div>
 	</div>
-
 
 
 	<footer class="container-fluid text-center">

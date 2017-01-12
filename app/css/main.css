@@ -1,19 +1,62 @@
-.koko {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s;
-  background-color: lightblue;
-  height: 100px;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0; }
+p.accordion {
+  margin: 0; }
 
-.ng-hide {
-  height: 0;
-  width: 0;
-  background-color: transparent;
-  top: -200px;
-  left: 200px; }
+.accordion a {
+  padding: 10px;
+  background: #ddd;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1px; }
+
+.accordion-content {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 1px 0; }
+
+button.today-date {
+  background-color: #595a5c;
+  color: #FFFFFF;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 3px; }
+
+button.folding {
+  background-color: #7c7d7f;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 2px; }
+
+button.folding.active, button.folding:hover {
+  background-color: #595a5c; }
+
+button.folding:after {
+  content: "";
+  color: #6C6D6F;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+
+button.folding.active:after {
+  content: ""; }
+
+div.panel {
+  padding: 0;
+  max-height: 0;
+  border: none;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out; }
+
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
 
 html {
   font-family: Arial, sans-serif;
@@ -41,6 +84,12 @@ button {
   color: #FFFFFF;
   font-weight: 500; }
 
+.navbar-inverse .navbar-nav > li i.fa {
+  margin-right: 5px; }
+
+.navbar-inverse .navbar-nav > li i.fa:hover {
+  color: #FFCC00; }
+
 ul.navbar-nav {
   bottom: 0;
   padding: 0;
@@ -51,7 +100,7 @@ ul.navbar-nav {
   padding-right: 0; }
 
 .results {
-  height: 60px;
+  padding: 15px;
   background-color: #FFFFFF;
   margin-bottom: 10px;
   border: 1px solid #E4E0E9; }
@@ -76,7 +125,12 @@ li > button.btn {
   -webkit-border-radius: 0;
   border-radius: 0;
   height: 42px;
-  background-color: #FFFFFF; }
+  background-color: #333333;
+  color: #FFCC00; }
+
+li > button.btn img {
+  height: 100%;
+  float: left; }
 
 div.news_title {
   font-weight: 600;
