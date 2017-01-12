@@ -25,10 +25,7 @@ app.filter('euroCups', function(){
 app.controller('bettingController', function ($scope) {
 
 
-	
 });
-
-
 
 
 app.controller("startController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
@@ -38,31 +35,7 @@ app.controller("startController", ['$scope', '$http', '$location', function ($sc
 
 	$scope.msg = "Betting";
 
-	$scope.oneAtATime = true;
 
-	$scope.groups = [
-		{
-			title: 'Dynamic Group Header - 1',
-			content: 'Dynamic Group Body - 1'
-		},
-		{
-			title: 'Dynamic Group Header - 2',
-			content: 'Dynamic Group Body - 2'
-		}
-	];
-
-	$scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-	$scope.addItem = function() {
-		var newItemNo = $scope.items.length + 1;
-		$scope.items.push('Item ' + newItemNo);
-	};
-
-	$scope.status = {
-		isCustomHeaderOpen: false,
-		isFirstOpen: true,
-		isFirstDisabled: false
-	};
 
 }]);
 
@@ -75,9 +48,11 @@ app.controller("sportController", ['$scope', '$http', '$location', function ($sc
 }]);
 
 
-app.controller("moreController", ['$scope', '$routeParams', function ($scope, $routeParams) {
+app.controller("moreController", ['$scope',  function ($scope) {
     $scope.msg = "More";
+
     // $scope.f = $scope.infoClub[$routeParams.id]
+
 
 }]);
 

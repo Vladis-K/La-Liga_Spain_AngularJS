@@ -1,18 +1,18 @@
 <div class="container" ng-controller="startController">
-	<div class="row content">
-		<div class="container-fluid ">
-			<div class="col-sm-12">
-				<div class="row results" >
-					<div class="col-sm-2">Results</div>
-					<div class="col-sm-2">Results</div>
-					<div class="col-sm-2">Results</div>
-					<div class="col-sm-2">Results</div>
-					<div class="col-sm-2">Results</div>
-					<div class="col-sm-2">Results</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!--<div class="row content">-->
+		<!--<div class="container-fluid ">-->
+			<!--<div class="col-sm-12">-->
+				<!--<div class="row results" >-->
+					<!--<div class="col-sm-2">Results</div>-->
+					<!--<div class="col-sm-2">Results</div>-->
+					<!--<div class="col-sm-2">Results</div>-->
+					<!--<div class="col-sm-2">Results</div>-->
+					<!--<div class="col-sm-2">Results</div>-->
+					<!--<div class="col-sm-2">Results</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
 	<div class="row content">
 		<div class="container-fluid">
 			<nav class="col-xs-12 col-sm-2 sidenav">
@@ -55,49 +55,31 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<button class="today-date">{{ today | date:'longDate' }}</button>
-						<div ng-init="accordion=1">
-							<p class="accordion" ng-class="{active:accordion==1}">
-								<a href ng-click="accordion = 1">Section 1</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==1">
-								Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+						<!--<div ng-include="'myFile.htm'"></div>-->
 
-							<p class="accordion" ng-class="{active:accordion==2}">
-								<a href ng-click="accordion = 2">Section 2</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==2">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+						<ul class="accordion" my-collapse>
+							<li>
+								<h5>Game 1</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</li>
+							<li>
+								<h5>Game 2</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</li>
+							<li>
+								<h5>Game 3</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</li>
+							<li>
+								<h5>Game 4</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</li>
+							<li>
+								<h5>Game 5</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</li>
+						</ul>
 
-							<p class="accordion" ng-class="{active:accordion==3}">
-								<a href ng-click="accordion = 3">Section 3</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==3">
-								There are many variations of passages of Lorem Ipsum available,
-								but the majority have suffered alteration in some form</p>
-						</div>
-						<button class="today-date">{{ today | date:'longDate' }}</button>
-						<div ng-init="accordion=1">
-							<p class="accordion" ng-class="{active:accordion==1}">
-								<a href ng-click="accordion = 1">Section 1</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==1">
-								Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-
-							<p class="accordion" ng-class="{active:accordion==2}">
-								<a href ng-click="accordion = 2">Section 2</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==2">
-								It is a long established fact that a reader will be distracted
-								by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-
-							<p class="accordion" ng-class="{active:accordion==3}">
-								<a href ng-click="accordion = 3">Section 3</a>
-							</p>
-							<p class="accordion-content" ng-show="accordion==3">
-								There are many variations of passages of Lorem Ipsum available,
-								but the majority have suffered alteration in some form</p>
-						</div>
 					</div>
 				</div>
 

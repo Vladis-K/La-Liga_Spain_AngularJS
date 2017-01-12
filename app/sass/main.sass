@@ -10,6 +10,56 @@ $frame-color: #E4E0E9
 $button-color: #7c7d7f
 $button-hover: #595a5c
 
+//accordion
+.accordion
+	list-style: none
+	padding: 0
+	margin: 0
+
+.accordion .item .title
+	margin: 0 0 1px 0
+	padding: 8px
+	background-color: $font-blog-color
+	border: none
+	color: #fff
+	position: relative
+
+.accordion .item .title:after
+	content: '\f078'
+	font-family: 'FontAwesome'
+	position: absolute
+	top: 8px
+	right: 10px
+	transition: all 0.5s ease
+
+.accordion .item.open .title:after
+	transform: rotate(180deg)
+
+.accordion .item .content
+	padding: 0 0 0 10px
+	margin: 0
+	background-color: $content-color
+	transition: all 0.5s ease
+	overflow: hidden
+
+.accordion .item.open .content
+	height: auto
+
+
+=border-radius($radius)
+	border-radius: $radius
+
+html
+	font-family: $font-stack
+	margin: 0
+	padding: 0
+
+body
+	//background: linear-gradient(to bottom, $frame-color, $button-color)
+	background-color: $ground-color
+	font-family: $font-stack
+	padding-top: 70px
+	margin: 0
 
 p.accordion
 	margin: 0
@@ -73,19 +123,6 @@ div.panel
 .nav, .pagination, .carousel, .panel-title a
 	cursor: pointer
 
-=border-radius($radius)
-	border-radius: $radius
-
-html
-	font-family: $font-stack
-	margin: 0
-	padding: 0
-
-body
-	background-color: $ground-color
-	font-family: $font-stack
-	padding-top: 70px
-	margin: 0
 
 button
 	border-radius: 0
@@ -144,6 +181,7 @@ object, iframe
 li>button.btn
 	border-radius: 0
 	height: 42px
+	padding: 2px
 	background-color: $back-color
 	color: $font-add-color
 
