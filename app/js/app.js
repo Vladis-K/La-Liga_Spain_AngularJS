@@ -16,7 +16,7 @@
              },
              link: function(scope, el, attrs) {
                  var itemSelector = attrs.itemSelector || 'li',
-                     titleSelector = attrs.titleSelector || " h5",
+                     titleSelector = attrs.titleSelector || 'div',
                      contentSelector = attrs.contentSelector || 'p';
                  $timeout(function(){
                      var items = el[0].querySelectorAll(itemSelector);

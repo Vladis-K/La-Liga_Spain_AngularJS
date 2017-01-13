@@ -1,9 +1,13 @@
-app.controller("MainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
-	
-	$http.get('clubs/clubs.json').success(function(data){
-		$scope.infoClub = data;
-	});
-	
+app.controller("startController", ['$scope', '$http', '$location', '$interval', function ($scope, $http, $location, $interval) {
+
+		$scope.today = new Date();
+		// $scope.today = date;
+
+		var clock = function() {
+			$scope.clock = Date.now();
+		};
+		$interval(clock, 1000);
+
 }]);
 
 app.directive('backImg', function(){
@@ -16,28 +20,12 @@ app.directive('backImg', function(){
 	};
 });
 
-app.filter('euroCups', function(){
-	return function(input){
-		// console.log(input);
-	}
-})
+
 
 app.controller('bettingController', function ($scope) {
-
-
+	$scope.msg = "Links to BET";
 });
 
-
-app.controller("startController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
-
-	var date = new Date();
-	$scope.today = date;
-
-	$scope.msg = "Betting";
-
-
-
-}]);
 
 
 app.controller("sportController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
@@ -48,11 +36,14 @@ app.controller("sportController", ['$scope', '$http', '$location', function ($sc
 }]);
 
 
-app.controller("moreController", ['$scope',  function ($scope) {
-    $scope.msg = "More";
-
-    // $scope.f = $scope.infoClub[$routeParams.id]
-
-
+app.controller("movieController", ['$scope',  function ($scope) {
+    $scope.msg = "Most popular highlights";
+	
 }]);
+
+// app.controller("MainController", [ '$scope', '$http', '$location', function ($scope, $http, $location) {
+// 	$http.get('clubs/clubs.json').success(function(data){
+// 		$scope.infoClub = data;
+// 	});
+// }]);
 

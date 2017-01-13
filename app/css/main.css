@@ -73,6 +73,9 @@ button.today-date {
   border: none;
   margin-bottom: 3px; }
 
+button.today-date span:nth-child(2) {
+  float: right; }
+
 button.folding {
   background-color: #7c7d7f;
   color: #FFFFFF;
@@ -127,7 +130,7 @@ button {
   margin-right: 5px; }
 
 .navbar-inverse .navbar-nav > li i.fa:hover {
-  color: #FFCC00; }
+  color: #DD2824; }
 
 ul.navbar-nav {
   bottom: 0;
@@ -139,7 +142,8 @@ ul.navbar-nav {
   padding-right: 0; }
 
 .results {
-  padding: 15px;
+  padding: 10px;
+  height: 40px;
   background-color: #FFFFFF;
   margin-bottom: 10px;
   border: 1px solid #E4E0E9; }
@@ -147,10 +151,6 @@ ul.navbar-nav {
 .results div:not(:last-child) {
   height: 100%;
   border-right: 1px solid #E4E0E9; }
-
-.results div:last-child {
-  height: inherit;
-  border-right: none; }
 
 div.stream_main {
   margin: 0 0 20px 0;

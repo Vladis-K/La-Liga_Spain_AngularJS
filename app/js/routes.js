@@ -8,14 +8,15 @@ app.config( function($routeProvider) {
         templateUrl : "templates/partials/sport.htm",
         controller : "sportController"
     })
-     .when("/betting", {
+    .when("/more", {
+         templateUrl : "templates/partials/more.htm",
+         controller : "movieController"
+        })
+        .when("/betting", {
         templateUrl : "templates/partials/betting.htm",
         controller : "bettingController"
     })
-    .when("/more", {
-        templateUrl : "templates/partials/more.htm",
-        controller : "moreController"
-    })    
+
     .when("/main", {
          templateUrl : "templates/main.htm",
          controller : "MainController"
