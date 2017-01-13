@@ -1,6 +1,8 @@
 <div class="container" ng-controller="startController">
-	<div class="row content">
-		<div class="container-fluid ">
+
+
+
+	<div class="row content" >
 			<div class="col-sm-12">
 				<div class="row results">
 					<div class="col-sm-2">Today's Top Games</div>
@@ -10,11 +12,10 @@
 					<div class="col-sm-1">Next</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	<div class="row content">
-		<div class="container-fluid">
-			<nav class="col-xs-12 col-sm-2 sidenav">
+		<div class="col-xs-12 col-sm-2 sidenav">
+			<nav>
 				<ul class="nav nav-pills nav-stacked">
 					<li><button type="button" class="btn btn-block"><img src="img/channels/eurosport.png" alt=""></button></li>
 					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
@@ -26,31 +27,27 @@
 					<li><button type="button" class="btn btn-block"><img src="img/channels/canal-sp.png" alt=""></button></li>
 				</ul>
 			</nav>
-
+		</div>
 
 			<div class="col-xs-12 col-sm-6">
-				<!--<iframe frameborder="0" marginheight="0" marginwidth="0" height="490" src="http://crichd.tv/update/skys1.php"-->
-				<!--name="iframe_a" scrolling="no" width="620">Your Browser Do not Support Iframe-->
-				<!--</iframe>-->
-
-				<div class="stream_main">
-					<object width="400" data="http://www.youtube.com/v/XGSy3_Czz8k">
-					</object>
-				</div>
-
+				<div class="stream_main"><object width="400" data="http://www.youtube.com/v/XGSy3_Czz8k"></object></div>
 				<div class="row">
 					<div class="col-sm-12">
-						<button class="today-date"><span>{{ today | date:'longDate' }} </span><span>{{ clock | date:'HH:mm:ss'}}</span></button>
+						<button class="today-date"><span>{{ today | date:'longDate' }}</span></button>
 						<!--<div ng-include="'myFile.htm'"></div>-->
+
 						<ul class="accordion" my-collapse>
 							<li>
 								<div><span>Flag</span><span>21:00</span><span>Lille OSC vs Saint-Etienne</span>
-									 <span>Live</span> </div>
-								<p>Recommended Link<span>Watch</span></p>
+									 <span class="live">Live</span>
+								</div>
+								<p>Recommended Link 1 <span>Watch</span></p>
 							</li>
 							<li>
-								<div><span>Flag</span><span>22:00</span><span>Leicester City vs Chelsea</span>
-									<span>Upcoming</span> </div>
+								<div>
+									<span>Flag</span><span>22:00</span><span>Leicester City vs Chelsea</span>
+									<span class="soon">Soon</span>
+								</div>
 								<p>Recommended Link<span>Watch</span></p>
 							</li>
 							<li>
@@ -66,32 +63,23 @@
 								<p>Recommended Link<span>Watch</span></p>
 							</li>
 						</ul>
-
 					</div>
 				</div>
-
 			</div>
 
 			<div class="col-xs-12 col-sm-4 sidenav">
 				<div class="news_title">News</div>
-				<div class="row">
+					<div class="row">
 					<div class="col-xs-6 col-sm-12 col-md-12">
 						<div class="well">
-							<aside>
-								<figure>
-									HARDEN NOTCHES ANOTHER TRIPLE-DOUBLE
-								</figure>
-								<div>
-									<p>James Harden seals his 10th triple-double of the season when he makes
+							<aside><figure>HARDEN NOTCHES ANOTHER TRIPLE-DOUBLE</figure>
+								<div><p>James Harden seals his 10th triple-double of the season when he makes
 										a block and grabs the loose ball for his 10th rebound, to go along with 40 points and
-										11 assists, in the Rockets' win over the Raptors.</p>
+										11 assists, in the Rockets' win over the Raptors.
+									</p>
 								</div>
-								<div>
-									<img src="img/news/00001a.jpg" alt="">
-								</div>
-								<details>
-									<summary>Details</summary>
-									<span class="data_public">January, 9 2017.</span>
+								<div><img src="img/news/00001a.jpg" alt=""></div>
+								<details><summary>Details</summary><span class="data_public">January, 9 2017.</span>
 									<a href="">Share</a>
 								</details>
 							</aside>
@@ -99,22 +87,14 @@
 					</div>
 					<div class="col-xs-6 col-sm-12 col-md-12">
 						<div class="well">
-							<aside>
-								<figure>
-									LEBRON SCORES 10,000TH FIELD GOAL
-								</figure>
-								<div>
-									<p>
+							<aside><figure>LEBRON SCORES 10,000TH FIELD GOAL</figure>
+								<div><p>
 										LeBron James drives to the hoop and sinks a shot for the 10,000th made field
 										goal of his career.
 									</p>
 								</div>
-								<div>
-									<img src="img/news/00002a.jpg" alt="">
-								</div>
-								<details>
-									<summary>Details</summary>
-									<span class="data_public">January, 9 2017.</span>
+								<div><img src="img/news/00002a.jpg" alt=""></div>
+								<details><summary>Details</summary><span class="data_public">January, 9 2017.</span>
 									<a href="">Share</a>
 								</details>
 							</aside>
@@ -126,12 +106,9 @@
 			</div>
 
 		</div>
-	</div>
 
 
 	<footer class="container-fluid text-center">
 		<p>Footer Text</p>
 	</footer>
 
-
-</div>

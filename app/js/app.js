@@ -25,7 +25,7 @@
                              var title = items[i].querySelectorAll(titleSelector)[0];
                              var content = items[i].querySelectorAll(contentSelector)[0];
                              scope.height.push({
-                                 'height': (content.offsetHeight + 10) + 'px'
+                                 'height': (content.offsetHeight ) + 'px'
                              });
                              angular.element(items[i]).addClass('item').attr({
                                  'ng-class': '{\'open\':current == ' + i + '}'
@@ -33,7 +33,7 @@
                              angular.element(title).addClass('title').attr('ng-click', 'toggle(' + i + ')');
                              angular.element(content).addClass('content').attr({
                                  'ng-style': 'current == ' + i + '?height[' + i + ']:zero'
-                             });;
+                             });
 
                          }
                      }

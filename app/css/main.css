@@ -1,7 +1,55 @@
+.flag {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("flags.png") no-repeat; }
+
+.flag-en {
+  left: 50px;
+  width: 46px;
+  background: url("img/flags.png") -47px 0; }
+
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #EDEEF0;
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+  margin: 0; }
+
 .accordion {
   list-style: none;
   padding: 0;
   margin: 0; }
+  .accordion li div span:nth-child(1) {
+    background-color: #905bd8; }
+  .accordion li div span:nth-child(2) {
+    display: inline-block;
+    margin-left: 1%; }
+  .accordion li div span:nth-child(3) {
+    display: inline-block;
+    margin-left: 2%; }
+  .accordion li div span:nth-child(4) {
+    display: inline-block;
+    text-align: center;
+    width: 7%;
+    float: right;
+    margin-right: 7%; }
+  .accordion li div span[class="live"] {
+    background-color: #ff0000; }
+  .accordion li div span[class="soon"] {
+    background-color: #2e8b57; }
+  .accordion li p {
+    height: 30px;
+    line-height: 30px; }
+  .accordion li p span {
+    display: inline-block;
+    float: right;
+    margin-right: 8%;
+    color: #00b3ee; }
 
 .accordion .item .title {
   margin: 0 0 1px 0;
@@ -36,45 +84,15 @@
 .accordion .item.open .content {
   height: auto; }
 
-html {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #EDEEF0;
-  font-family: Arial, sans-serif;
-  padding-top: 70px;
-  margin: 0; }
-
-p.accordion {
-  margin: 0; }
-
-.accordion a {
-  padding: 10px;
-  background-color: #ddd;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 1px; }
-
-.accordion-content {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 1px 0;
-  background-color: #FFFFFF; }
-
 button.today-date {
   background-color: #595a5c;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 5px 10px 5px 5px;
   width: 100%;
   border: none;
   margin-bottom: 3px; }
-
-button.today-date span:nth-child(2) {
-  float: right; }
+  button.today-date span:nth-child(2) {
+    float: right; }
 
 button.folding {
   background-color: #7c7d7f;

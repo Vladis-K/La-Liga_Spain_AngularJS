@@ -10,11 +10,65 @@ $frame-color: #E4E0E9
 $button-color: #7c7d7f
 $button-hover: #595a5c
 
-//accordion
+.flag
+	display: inline-block
+	width: 32px
+	height: 32px
+	background: url('flags.png') no-repeat
+
+.flag-en
+	left: 50px
+	width: 46px
+	background: url('img/flags.png') -47px 0
+
+
+=border-radius($radius)
+	border-radius: $radius
+
+html
+	font-family: $font-stack
+	margin: 0
+	padding: 0
+
+body
+	//background: linear-gradient(to bottom, $frame-color, $button-color)
+	background-color: $ground-color
+	font-family: $font-stack
+	padding-top: 70px
+	margin: 0
+
+//Start collapse links
 .accordion
 	list-style: none
 	padding: 0
 	margin: 0
+	li div span:nth-child(1)
+		background-color: #905bd8
+	li div span:nth-child(2)
+		display: inline-block
+		margin-left: 1%
+	li div span:nth-child(3)
+		display: inline-block
+		margin-left: 2%
+		//font-weight: 600
+	li div span:nth-child(4)
+		display: inline-block
+		text-align: center
+		width: 7%
+		float: right
+		margin-right: 7%
+	li div span[class="live"]
+		background-color: #ff0000
+	li div span[class="soon"]
+		background-color: #2e8b57
+	li p
+		height: 30px
+		line-height: 30px
+	li p span
+		display: inline-block
+		float: right
+		margin-right: 8%
+		color: #00b3ee
 
 .accordion .item .title
 	margin: 0 0 1px 0
@@ -44,54 +98,18 @@ $button-hover: #595a5c
 
 .accordion .item.open .content
 	height: auto
-
-
-=border-radius($radius)
-	border-radius: $radius
-
-html
-	font-family: $font-stack
-	margin: 0
-	padding: 0
-
-body
-	//background: linear-gradient(to bottom, $frame-color, $button-color)
-	background-color: $ground-color
-	font-family: $font-stack
-	padding-top: 70px
-	margin: 0
-
-p.accordion
-	margin: 0
-
-.accordion a
-	padding: 10px
-	background-color: #ddd
-	color: #333
-	text-decoration: none
-	font-weight: bold
-	display: block
-	margin-bottom: 1px
-
-.accordion-content
-	border: 1px solid #ddd
-	padding: 10px
-	margin: 1px 0
-	background-color: $content-color
+//End collapse
 
 
 button.today-date
 	background-color: $button-hover
 	color: $content-color
-	padding: 5px
+	padding: 5px 10px 5px 5px
 	width: 100%
 	border: none
 	margin-bottom: 3px
-
-button.today-date span:nth-child(2)
-	float: right
-
-
+	span:nth-child(2)
+		float: right
 
 button.folding
 	background-color: $button-color
@@ -103,10 +121,8 @@ button.folding
 	transition: 0.4s
 	margin-bottom: 2px
 
-
 button.folding.active, button.folding:hover
 	background-color: $button-hover
-
 
 button.folding:after
 	content: ""
