@@ -1,55 +1,45 @@
-.flag {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: url("flags.png") no-repeat; }
-
-.flag-en {
-  left: 50px;
-  width: 46px;
-  background: url("img/flags.png") -47px 0; }
-
 html {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0; }
 
 body {
   background-color: #EDEEF0;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   padding-top: 70px;
   margin: 0; }
 
-.accordion {
+ul.accordion {
   list-style: none;
   padding: 0;
   margin: 0; }
-  .accordion li div span:nth-child(1) {
-    background-color: #905bd8; }
-  .accordion li div span:nth-child(2) {
+  ul.accordion li div span:nth-child(1) {
+    background-color: transparent;
+    margin-top: 1px; }
+  ul.accordion li div span:nth-child(2) {
     display: inline-block;
     margin-left: 1%; }
-  .accordion li div span:nth-child(3) {
+  ul.accordion li div span:nth-child(3) {
     display: inline-block;
     margin-left: 2%; }
-  .accordion li div span:nth-child(4) {
+  ul.accordion li div span:nth-child(4) {
     display: inline-block;
     text-align: center;
-    width: 7%;
+    width: 8%;
     float: right;
     margin-right: 7%; }
-  .accordion li div span[class="live"] {
+  ul.accordion li div span[class="live"] {
     background-color: #ff0000; }
-  .accordion li div span[class="soon"] {
+  ul.accordion li div span[class="soon"] {
     background-color: #2e8b57; }
-  .accordion li p {
+  ul.accordion li p {
     height: 30px;
     line-height: 30px; }
-  .accordion li p span {
+  ul.accordion li p span {
     display: inline-block;
     float: right;
     margin-right: 8%;
-    color: #00b3ee; }
+    font-weight: 600; }
 
 .accordion .item .title {
   margin: 0 0 1px 0;

@@ -1,4 +1,4 @@
-$font-stack: Arial, sans-serif
+$font-stack: Helvetica, Arial, sans-serif
 $border-outer: 1px solid #905bd8
 $font-description-color: #2B2C2D
 $font-add-color: #FFCC00
@@ -9,18 +9,6 @@ $content-color: #FFFFFF
 $frame-color: #E4E0E9
 $button-color: #7c7d7f
 $button-hover: #595a5c
-
-.flag
-	display: inline-block
-	width: 32px
-	height: 32px
-	background: url('flags.png') no-repeat
-
-.flag-en
-	left: 50px
-	width: 46px
-	background: url('img/flags.png') -47px 0
-
 
 =border-radius($radius)
 	border-radius: $radius
@@ -38,12 +26,13 @@ body
 	margin: 0
 
 //Start collapse links
-.accordion
+ul.accordion
 	list-style: none
 	padding: 0
 	margin: 0
 	li div span:nth-child(1)
-		background-color: #905bd8
+		background-color: transparent
+		margin-top: 1px
 	li div span:nth-child(2)
 		display: inline-block
 		margin-left: 1%
@@ -54,7 +43,7 @@ body
 	li div span:nth-child(4)
 		display: inline-block
 		text-align: center
-		width: 7%
+		width: 8%
 		float: right
 		margin-right: 7%
 	li div span[class="live"]
@@ -64,11 +53,12 @@ body
 	li p
 		height: 30px
 		line-height: 30px
+		//color: #00b3ee
 	li p span
 		display: inline-block
 		float: right
 		margin-right: 8%
-		color: #00b3ee
+		font-weight: 600
 
 .accordion .item .title
 	margin: 0 0 1px 0

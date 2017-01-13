@@ -25,20 +25,24 @@ $large: 1200px
 @include respond-to(handhelds)
   [class~=extra-small]
     display: none
+  .sidenav
+    padding-right: 15px
+    padding-left: 15px
 
 @include respond-to(small-screens)
   [class~=extra]
     display: none
-
+  .sidenav
+    padding-right: 15px
+    padding-left: 15px
 
 @include respond-to(medium-screens)
   [class~=extra]
     display: none
 
 
+
 @include respond-to(wide-screens)
   [class~=extra]
     display: none
-
-
 
