@@ -5,7 +5,7 @@
 				<div class="row results">
 					<div class="col-sm-2">Today's Top Games</div>
 					<div class="col-sm-3"><span>21:30</span>Leeds United	vs Derby County</div>
-					<div class="col-sm-3"><span>22:30</span>Leinster vs Montpellier</div>
+					<div class="col-sm-3"><span>22:30</span>Leister vs Montpellier</div>
 					<div class="col-sm-3"><span>23:30</span>Lille vs Saint-Etienne</div>
 					<div class="col-sm-1">Next</div>
 				</div>
@@ -13,10 +13,17 @@
 	</div>
 	<div class="row content">
 		<div class="col-xs-12 col-sm-2 sidenav">
+
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
-					<li><button type="button" class="btn btn-block"><img src="img/channels/eurosport.png" alt=""></button></li>
-					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
+					<li><button type="button" class="btn btn-block" >
+							<img src="img/channels/eurosport.png" alt="">
+						</button>
+					</li>
+					<li><button id="skysport" type="button" class="btn btn-block">
+						<img src="img/channels/sky-sports.png" alt="">
+						</button>
+					</li>
 					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
 					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
 					<li><button type="button" class="btn btn-block"><img src="img/channels/sky-sports.png" alt=""></button></li>
@@ -28,22 +35,23 @@
 		</div>
 
 			<div class="col-xs-12 col-sm-6">
-				<div class="stream_main"><object width="400" data="http://www.youtube.com/v/XGSy3_Czz8k"></object></div>
+				<h1>{{myWelcome}}</h1>
+				<!--<div ng-include="'templates/partials/channel-view/inner-frame.htm'"></div>-->
+				<div ><object class="stream_main" width="400" data="http://www.youtube.com/v/XGSy3_Czz8k"></object></div>
 				<div class="row">
 					<div class="col-sm-12">
 						<button class="today-date"><span>{{ today | date:'longDate' }}</span></button>
-						<!--<div ng-include="'myFile.htm'"></div>-->
 
 						<ul class="accordion" my-collapse>
 							<li>
 								<div>
-									<span class="banner"><span class="flag _England"></span></span><span>21:00</span>
+									<span class="banner"><i class="flag _England"></i></span><span>21:00</span>
 									<span>Lille OSC vs Saint-Etienne</span><span class="live">Live</span>
 								</div>
-								<p>Recommended Link<span>Watch</span></p>
+								<p>Turn on<span>Watch</span></p>
 							</li>
 							<li>
-								<div><span class="banner"><span class="flag fr"></span></span><span>22:00</span><span>Leicester City vs Chelsea</span>
+								<div><span class="banner"><i class="flag fr"></i></span><span>22:00</span><span>Leicester City vs Chelsea</span>
 									<span class="soon">Soon</span>
 								</div>
 								<p>Recommended Link<span>Watch</span></p>

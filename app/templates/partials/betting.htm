@@ -2,7 +2,195 @@
   <div class="col-sm-8">
     <h1>{{msg}}</h1>
 
+
+    <table align="center" width="650" border="2" style="background-color: #E5E5E5" bordercolor="#CFD9BB" bordercolorlight="#CFD9BB" bordercolordark="#CFD9BB">
+      <tr style="height:30px;">
+        <td>
+          <span style="color:#ffffff;font-weight: bold; margin-bottom:5px; float:left; width:100%;">Schedule Timezone: BST (UK DST) = GMT +01:00 | Your Timezone:</span>
+          <div  style="float:right; width:100%;">
+            <select style="font-size:12px; color:#000;" id="timezone-select" onChange="changeTimeZone(this.value);">
+              <option value="-13:00">GMT -12:00 US-Baker Islands,US-Howland Islands</option>
+              <option value="-12:00">GMT -11:00 American Samoa</option>
+              <option value="-11:00">GMT -10:00 Papeete,Pacific/Honolulu </option>
+              <option value="-10:00">GMT -09:00 Anchorage</option>
+              <option value="-09:00">GMT -08:00 America/Los_Angeles </option>
+              <option value="-08:00">GMT -07:00 Phoenix,calgary </option>
+              <option value="-07:00">GMT -06:00 America/Chicago,Maxico City</option>
+              <option value="-06:00">GMT -05:00 America/New_York,Toronto,Kingston</option>
+              <option value="-05:00">GMT -04:00 Santiago,La Paz </option>
+              <option value="-04:30">GMT -03:30 St. John's</option>
+              <option value="-04:00">GMT -03:00 Buenos Aires,Montevideo</option>
+              <option value="-02:00">GMT -01:00 Denmark,Portugal</option>
+              <option value="-01:00">BST -01:00 GMT/UTC</option>
+              <option value="+00:00" selected="selected">BST +00:00 GMT +01:00,Europe/London,Dublin,Accra </option>
+              <option value="+00:00">GMT +01:00 Europe/Berlin</option>
+              <option value="+01:00">GMT +02:00 Europe/Helsinki </option>
+              <option value="+02:00">GMT +03:00 Moscow,Nairobi,Doha</option>
+              <option value="+02:30">GMT +03:30 Tehran</option>
+              <option value="+03:00">GMT +04:00 Baku,Dubai,Muscat</option>
+              <option value="+03:30">GMT +04:30 Kabul</option>
+              <option value="+03:45">GMT +04:45</option>
+              <option value="+04:00">GMT +05:00 Asia/Karachi,Tashkent</option>
+              <option value="+04:30">GMT +05:30 Asia/Calcutta</option>
+              <option value="+05:00">GMT +06:00 Almaty,Dhaka</option>
+              <option value="+06:00">GMT +07:00 Asia/Jakarta</option>
+              <option value="+07:00">GMT +08:00 Beijing,Singapur,Kuala Lumpur,Perth</option>
+              <option value="+07:30">GMT +08:30 North Koria</option>
+              <option value="+08:00">GMT +9:00 Tokyo,Ambon</option>
+              <option value="+08:30">GMT +9:30 Australia/Adelaide</option>
+              <option value="+09:00">GMT +10:00 Australia/Sydney</option>
+              <option value="+10:00">GMT +11:00 Noumea</option>
+              <option value="+11:00">GMT +12:00 Pacific/Auckland</option>
+            </select>
+          </div>
+      </td>
+      </tr>
+      </table>
+
+    <table class="table table-striped table-bordered table-hover bordr" id="dataTables-example">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>League</th>
+        <th>Flag</th>
+
+        <th>Title</th>
+        <th>Live</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+
+
+      <tr><td style="width:10px;"><img src=images/cricket.png alt="live"></td><td style="width:20px;" class="date">2016-12-21</td><td style="width:10px;" class="matchtime">00:00:00</td><td style="width:10px;" class="league">Test/Odi/T20</td><td style="width:10px;" class="league"><img src='images/country/aus.png' style='width: 80%;' alt='error'></td><td class="tital"><b>KFC T20 Big Bash League</b></td><td style="width:10px;" class="live"><a href=watch/live/kfc-t20-big-bash-league-live-streaming class="btn btn-danger btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts"><a href=watch/live/kfc-t20-big-bash-league ><img src=\images\liveG.gif alt="live"></a></td></tr><tr><td style="width:10px;"><img src=images/cricket.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">07:00:00</td><td style="width:10px;" class="league">Test/Odi/T20</td><td style="width:10px;" class="league"><img src='images/country/aus.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Sydney Thunder vs Sydney Sixers </b></td><td style="width:10px;" class="live"><a href=watch/live/sydney-thunder-vs-sydney-sixers--live-streaming class="btn btn-danger btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts"><a href=watch/live/sydney-thunder-vs-sydney-sixers- ><img src=\images\liveG.gif alt="live"></a></td></tr><tr><td style="width:10px;"><img src=images/cricket.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">08:00:00</td><td style="width:10px;" class="league">Test/Odi/T20</td><td style="width:10px;" class="league"><img src='images/country/africa.png' style='width: 80%;' alt='error'></td><td class="tital"><b>South Africa vs Sri Lanka</b></td><td style="width:10px;" class="live"><a href=watch/live/south-africa-vs-sri-lanka-live-streaming class="btn btn-danger btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts"><a href=watch/live/south-africa-vs-sri-lanka ><img src=\images\liveG.gif alt="live"></a></td></tr><tr><td style="width:10px;"><img src=images/golf.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">10:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/usa.png' style='width: 80%;' alt='error'></td><td class="tital"><b>The BMW SA Open</b></td><td style="width:10px;" class="live"><a href=watch/live/the-bmw-sa-open-live-streaming class="btn btn-danger btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts"><a href=watch/live/the-bmw-sa-open ><img src=\images\liveG.gif alt="live"></a></td></tr><tr><td style="width:10px;"><img src=images/cricket.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">10:15:00</td><td style="width:10px;" class="league">Test/Odi/T20</td><td style="width:10px;" class="league"><img src='images/country/aus.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Perth Scorchers vs Melbourne Stars</b></td><td style="width:10px;" class="live"><a href=watch/live/perth-scorchers-vs-melbourne-stars-live-streaming class="btn btn-danger btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts"><a href=watch/live/perth-scorchers-vs-melbourne-stars ><img src=\images\liveG.gif alt="live"></a></td></tr>	<tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">12:00:00</td><td style="width:10px;" class="league">La Liga</td><td style="width:10px;" class="league"><img src='images/country/spain.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Leganes vs Athletic Bilbao</b></td><td style="width:10px;" class="live"><a href=watch/live/leganes-vs-athletic-bilbao-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">12:30:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Tottenham Hotspur vs West Bromwich Albion</b></td><td style="width:10px;" class="live"><a href=watch/live/tottenham-hotspur-vs-west-bromwich-albion-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/rugby.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">13:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Connacht vs Zebre</b></td><td style="width:10px;" class="live"><a href=watch/live/connacht-vs-zebre-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/rugby.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">13:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Northampton vs Castres</b></td><td style="width:10px;" class="live"><a href=watch/live/northampton-vs-castres-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/other.gif alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">14:45:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/europe.jpe' style='width: 80%;' alt='error'></td><td class="tital"><b>World Cup Wisla</b></td><td style="width:10px;" class="live"><a href=watch/live/world-cup-wisla-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Soccer Saturday</b></td><td style="width:10px;" class="live"><a href=watch/live/soccer-saturday-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Sunderland vs Stoke City</b></td><td style="width:10px;" class="live"><a href=watch/live/sunderland-vs-stoke-city-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Swansea City FC vs Arsenal</b></td><td style="width:10px;" class="live"><a href=watch/live/swansea-city-fc-vs-arsenal-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Watford FC vs Middlesbrough</b></td><td style="width:10px;" class="live"><a href=watch/live/watford-fc-vs-middlesbrough-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Hull City vs AFC Bournemouth</b></td><td style="width:10px;" class="live"><a href=watch/live/hull-city-vs-afc-bournemouth-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Burnley FC vs Southampton FC </b></td><td style="width:10px;" class="live"><a href=watch/live/burnley-fc-vs-southampton-fc--live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>West Ham United vs Crystal Palace</b></td><td style="width:10px;" class="live"><a href=watch/live/west-ham-united-vs-crystal-palace-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:00:00</td><td style="width:10px;" class="league">Championship</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Fulham FC vs Barnsley FC</b></td><td style="width:10px;" class="live"><a href=watch/live/fulham-fc-vs-barnsley-fc-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:15:00</td><td style="width:10px;" class="league">La Liga</td><td style="width:10px;" class="league"><img src='images/country/spain.png' style='width: 80%;' alt='error'></td><td class="tital"><b>FC Barcelona vs UD Las Palmas</b></td><td style="width:10px;" class="live"><a href=watch/live/fc-barcelona-vs-ud-las-palmas-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/rugby.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">15:15:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Wasps Rugby vs Toulouse</b></td><td style="width:10px;" class="live"><a href=watch/live/wasps-rugby-vs-toulouse-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">16:00:00</td><td style="width:10px;" class="league">Ligue 1</td><td style="width:10px;" class="league"><img src='images/country/french.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Stade Rennes vs Paris Saint Germain</b></td><td style="width:10px;" class="live"><a href=watch/live/stade-rennes-vs-paris-saint-germain-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">16:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/europe.jpe' style='width: 80%;' alt='error'></td><td class="tital"><b>Gabon vs Guinea</b></td><td style="width:10px;" class="live"><a href=watch/live/gabon-vs-guinea-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:00:00</td><td style="width:10px;" class="league">Serie A</td><td style="width:10px;" class="league"><img src='images/country/ita.png' style='width: 80%;' alt='error'></td><td class="tital"><b>FC Crotone vs Bologna FC</b></td><td style="width:10px;" class="live"><a href=watch/live/fc-crotone-vs-bologna-fc-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:30:00</td><td style="width:10px;" class="league">Premier League</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Leicester City v Chelsea</b></td><td style="width:10px;" class="live"><a href=watch/live/leicester-city-v-chelsea-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:30:00</td><td style="width:10px;" class="league">La Liga</td><td style="width:10px;" class="league"><img src='images/country/spain.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Atletico Madrid vs Real Betis</b></td><td style="width:10px;" class="live"><a href=watch/live/atletico-madrid-vs-real-betis-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:30:00</td><td style="width:10px;" class="league">Championship</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Wolverhampton Wanderers vs Aston Villa</b></td><td style="width:10px;" class="live"><a href=watch/live/wolverhampton-wanderers-vs-aston-villa-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/rugby.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:30:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Glasgow Warriors vs Munster</b></td><td style="width:10px;" class="live"><a href=watch/live/glasgow-warriors-vs-munster-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">17:30:00</td><td style="width:10px;" class="league">EREDIVISIE</td><td style="width:10px;" class="league"><img src='images/country/240Flag_of_the_Netherlands.jpg' style='width: 80%;' alt='error'></td><td class="tital"><b>SC Heerenveen vs ADO den Haag</b></td><td style="width:10px;" class="live"><a href=watch/live/sc-heerenveen-vs-ado-den-haag-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">18:45:00</td><td style="width:10px;" class="league">EREDIVISIE</td><td style="width:10px;" class="league"><img src='images/country/240Flag_of_the_Netherlands.jpg' style='width: 80%;' alt='error'></td><td class="tital"><b>PSV Eindhoven vs Excelsior</b></td><td style="width:10px;" class="live"><a href=watch/live/psv-eindhoven-vs-excelsior-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">18:45:00</td><td style="width:10px;" class="league">EREDIVISIE</td><td style="width:10px;" class="league"><img src='images/country/240Flag_of_the_Netherlands.jpg' style='width: 80%;' alt='error'></td><td class="tital"><b>Heracles vs FC Groningen</b></td><td style="width:10px;" class="live"><a href=watch/live/heracles-vs-fc-groningen-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:00:00</td><td style="width:10px;" class="league">Ligue 1</td><td style="width:10px;" class="league"><img src='images/country/french.png' style='width: 80%;' alt='error'></td><td class="tital"><b>SCO Angers vs Girondins Bordeaux</b></td><td style="width:10px;" class="live"><a href=watch/live/sco-angers-vs-girondins-bordeaux-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:00:00</td><td style="width:10px;" class="league">Ligue 1</td><td style="width:10px;" class="league"><img src='images/country/french.png' style='width: 80%;' alt='error'></td><td class="tital"><b>FC Lorient vs En Avant Guingamp</b></td><td style="width:10px;" class="live"><a href=watch/live/fc-lorient-vs-en-avant-guingamp-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:00:00</td><td style="width:10px;" class="league">Ligue 1</td><td style="width:10px;" class="league"><img src='images/country/french.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Montpellier HSC vs Dijon Footbal</b></td><td style="width:10px;" class="live"><a href=watch/live/montpellier-hsc-vs-dijon-footbal-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:00:00</td><td style="width:10px;" class="league">Ligue 1</td><td style="width:10px;" class="league"><img src='images/country/french.png' style='width: 80%;' alt='error'></td><td class="tital"><b>AS Nancy vs SC Bastia</b></td><td style="width:10px;" class="live"><a href=watch/live/as-nancy-vs-sc-bastia-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:00:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/europe.jpe' style='width: 80%;' alt='error'></td><td class="tital"><b>Burkina Faso vs Cameroon</b></td><td style="width:10px;" class="live"><a href=watch/live/burkina-faso-vs-cameroon-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:45:00</td><td style="width:10px;" class="league">La Liga</td><td style="width:10px;" class="league"><img src='images/country/spain.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Deportivo La Coruna vs Villarreal</b></td><td style="width:10px;" class="live"><a href=watch/live/deportivo-la-coruna-vs-villarreal-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:45:00</td><td style="width:10px;" class="league">EREDIVISIE</td><td style="width:10px;" class="league"><img src='images/country/240Flag_of_the_Netherlands.jpg' style='width: 80%;' alt='error'></td><td class="tital"><b>Sparta vs FC Utrecht</b></td><td style="width:10px;" class="live"><a href=watch/live/sparta-vs-fc-utrecht-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/football.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:45:00</td><td style="width:10px;" class="league">Serie A</td><td style="width:10px;" class="league"><img src='images/country/ita.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Inter Milan vs AC Chievo Verona</b></td><td style="width:10px;" class="live"><a href=watch/live/inter-milan-vs-ac-chievo-verona-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/rugby.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">19:45:00</td><td style="width:10px;" class="league">Other</td><td style="width:10px;" class="league"><img src='images/country/BritishFlag.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Racing Metro vs Leicester Tigers</b></td><td style="width:10px;" class="live"><a href=watch/live/racing-metro-vs-leicester-tigers-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr><tr><td style="width:10px;"><img src=images/am-football-220420141450068.png alt="live"></td><td style="width:20px;" class="date">Today</td><td style="width:10px;" class="matchtime">21:00:00</td><td style="width:10px;" class="league">NFL</td><td style="width:10px;" class="league"><img src='images/country/usa.png' style='width: 80%;' alt='error'></td><td class="tital"><b>Seattle Seahawks at Atlanta Falcons</b></td><td style="width:10px;" class="live"><a href=watch/live/seattle-seahawks-at-atlanta-falcons-live-streaming  class="btn btn-primary btnlive" style="font-size:11px;padding-top:1px;padding-left:11px;width:100%">Watch</a></td><td style="width:10px;" class="sts">NotLive</td></tr>
+    </table>
+
+
   </div>
   </div>
+
+<script>
+  jQuery.cookie=function(m,g,e){if(typeof g!="undefined"){e=e||{};
+    if(g===null){g="";e.expires=-1}var l="";
+    if(e.expires&&(typeof e.expires=="number"||e.expires.toUTCString)){var b;
+      if(typeof e.expires=="number"){b=new Date();b.setTime(b.getTime()+(e.expires*24*60*60*1000))}
+      else{b=e.expires}l="; expires="+b.toUTCString()}
+    var h=e.path?"; path="+(e.path):"";
+    var z=e.domain?"; domain="+(e.domain):"";
+    var k=e.secure?"; secure":"";
+    document.cookie=[m,"=",encodeURIComponent(g),l,h,z,k].join("")}
+    else{var a=null;
+    if(document.cookie&&document.cookie!=""){var c=document.cookie.split(";");
+      for(var f=0;f<c.length;f++){var j=jQuery.trim(c[f]);
+        if(j.substring(0,m.length+1)==(m+"=")){a=decodeURIComponent(j.substring(m.length+1));
+          break}}}return a}};var COOKIE_NAME="tz_n";
+        var options={path:"/",expires:1};
+        var d=new Date();
+        var defaultTimeZone=d.getTimezoneOffset()/60;
+        var defaultTimeZone_mins=d.getTimezoneOffset()%60;
+        var timeZoneVar=0;
+        var timeZoneVar_mins=0;
+        var timezone=0;
+        var timezone_hr=0;
+        var timezone_mins=0;
+        var dateIndex=0;
+        var rightNow=new Date();
+        var jan1=new Date(rightNow.getFullYear(),0,1,0,0,0,0);
+        var june1=new Date(rightNow.getFullYear(),6,1,0,0,0,0);
+        var temp=jan1.toGMTString();
+        var jan2=new Date(temp.substring(0,temp.lastIndexOf(" ")-1));temp=june1.toGMTString();
+        var june2=new Date(temp.substring(0,temp.lastIndexOf(" ")-1));
+        var std_time_offset=(jan1-jan2)/(1000*60*60);
+        var daylight_time_offset=(june1-june2)/(1000*60*60);
+        var dst;if(std_time_offset==daylight_time_offset){dst=0}else{dst=0;
+        var hemisphere=std_time_offset-daylight_time_offset;
+        if(hemisphere<0){std_time_offset=0;dst=0}
+        else{dst=0}}defaultTimeZone=parseFloat(defaultTimeZone);
+        defaultTimeZone_mins=parseFloat(defaultTimeZone_mins);
+      //Function changeTimeZone
+      function changeTimeZone(a){
+        zonetime=a.split(":");timezone_hr=zonetime[0];
+        timezone_mins=zonetime[1];
+        jQuery(".matchtime").each(function(){
+          var b=jQuery(this).html();
+          b=b.split(":");
+          b[0]=parseFloat(b[0])+parseFloat(timezone_hr)+parseFloat(timeZoneVar);
+          b[1]=parseFloat(b[1])+parseFloat(timezone_mins)+parseFloat(timeZoneVar_mins);
+         if(b[1]<0){b[1]=parseInt(60)+parseFloat(b[1]);
+         b[0]=parseFloat(b[0])-parseInt(1)}
+         if(b[1]>59){b[1]=parseFloat(b[1])-parseFloat(60);
+           b[0]=parseFloat(b[0])+parseInt(1)}
+          if(b[0]<0){b[0]=parseInt(24)+parseFloat(b[0])}
+          else{if(b[0]>23){b[0]=parseFloat(b[0])-parseInt(24)}}b[0]=checkTime(b[0]);b[1]=checkTime(b[1]);
+          jQuery(this).html(b[0]+":"+b[1])});
+          jQuery.cookie(COOKIE_NAME,a,options);
+          timezone_hr=parseFloat(timezone_hr)*parseFloat(-1);
+          timeZoneVar=parseFloat(timezone_hr);
+          timezone_mins=parseFloat(timezone_mins)*parseFloat(-1);
+          timeZoneVar_mins=parseFloat(timezone_mins)
+      }
+          function startTime(){var e=new Date();
+            var b=e.getHours()+parseInt(defaultTimeZone)-parseInt(timeZoneVar);
+            var c=e.getMinutes()+parseInt(defaultTimeZone_mins)-parseInt(timeZoneVar_mins);
+            var a=e.getSeconds();
+            if(c<0){c=60+c;b=b-1}
+            else{if(c>59){c=c-60;b=b+1}}
+            if(b<0){b=24+b}
+            else{if(b>23){b=b-24}}b=checkTime(b);
+            c=checkTime(c);
+            a=checkTime(a);
+            jQuery("#clock").html(b+":"+c+":"+a);
+            t=setTimeout("startTime()",500)}
+            function convert(a){
+              var b=parseInt(a);
+              a-=parseInt(a);
+              a*=60;
+              var f=parseInt(a);
+              a-=parseInt(a);a*=60;
+              var e=parseInt(a);
+              var c=b;if(b==0){c="00"}
+              else{if(b>0){c=(b<10)?"+0"+b:"+"+b}
+              else{c=(b>-10)?"-0"+Math.abs(b):b}}f=(f<10)?"0"+f:f;return c+":"+f}
+              function checkTime(a){if(a<10){a="0"+a}return a}
+              function addBookmark(){if(document.all){window.external.AddFavorite(location.href,document.title)}
+              else{if(window.sidebar){window.sidebar.addPanel("Online","http://","")}}}
+              function openPop(b,c,a){window.open(b,"","location=0,status=0,scrollbars=0,width="+c+",height="+a+",left=25,top=25");
+              return false}
+            jQuery().ready(function(){if(jQuery.cookie(COOKIE_NAME)!=null){timezone=jQuery.cookie(COOKIE_NAME)}
+              else{timezone=convert(std_time_offset);
+              jQuery.cookie(COOKIE_NAME,timezone,options)}timeZoneVar=timezone_hr-dst;
+              timeZoneVar_mins=timezone_mins;
+              jQuery("#timezone-select").val(timezone);changeTimeZone(timezone);startTime();
+              jQuery("#accordion").accordion({
+                collapsible:true,
+                autoHeight:false,
+                active:false,
+                icons:false})
+            });
+            if(top.location!=self.location){top.location=self.location}$(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop()!=0){$("#toTop").fadeIn()}
+          else{$("#toTop").fadeOut()}});$("#toTop").click(function(){
+        $("body,html").animate({scrollTop:0},800)})});
+
+        $(document).ready(function(){slideShow(4000)});
+        function slideShow(e){$("ul.slideshow").append('<li id="slideshow-caption" class="caption"><div class="slideshow-caption-container"><h3></h3><p></p></div></li>');
+          $("ul.slideshow li").css({opacity:0});$("ul.slideshow li:first").css({opacity:1}).addClass("show");
+          $("#slideshow-caption p").html($("ul.slideshow li.show").find("img").attr("alt"));
+          $("#slideshow-caption").css({opacity:"0.7",bottom:0});
+          var c=setInterval("gallery()",e);
+          $("ul.slideshow").hover(function(){clearInterval(c)},function(){c=setInterval("gallery()",e)})}function gallery(){var f=($("ul.slideshow li.show")?$("ul.slideshow li.show"):$("#ul.slideshow li:first"));
+          if(f.queue("fx").length==0){var g=((f.next().length)?((f.next().attr("id")=="slideshow-caption")?$("ul.slideshow li:first"):f.next()):$("ul.slideshow li:first"));
+            var h=g.find("img").attr("title");var i=g.find("img").attr("alt");
+            g.css({opacity:0}).addClass("show").animate({opacity:1},1000);$("#slideshow-caption").slideToggle(300,function(){$("#slideshow-caption p").html(i);
+              $("#slideshow-caption").slideToggle(500)});f.animate({opacity:0},1000).removeClass("show")}}function menumin_show(){document.getElementById("matchmenumin").style.display="block"}function menumin_hide(){menumin_fix_param=false;setTimeout("menumin_try_to_hide()",200)}function menumin_fix(){menumin_fix_param=true}var menumin_fix_param=false;
+        function menumin_try_to_hide(){
+          if(!menumin_fix_param){
+            document.getElementById("matchmenumin").style.display="none"}};
+</script>
+
+
 </div>
 

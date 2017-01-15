@@ -9,7 +9,24 @@ app.controller("navController", ['$scope', '$interval', function ($scope, $inter
 app.controller("startController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
 		$scope.today = new Date();
 		// $scope.today = date;
+	
+	var skysport = document.getElementById("skysport")
+	skysport.addEventListener('click', function(){
 
+    $scope.$apply(function() {
+		console.log("update time clicked");
+		$http({
+	    method : "GET",
+	    url : "templates/partials/channel-view/inner-frame.htm"
+		}).then(function mySucces(response) {
+			document.getElementsByClassName("stream_main").outerHTML = "";
+			$scope.myWelcome = response.data;
+		}, function myError(response) {
+			$scope.myWelcome = response.statusText;
+		});
+
+		});
+	})
 }]);
 
 app.controller("movieController", ['$scope',  function ($scope) {
@@ -27,7 +44,6 @@ app.controller("radioController", ['$scope', '$http', '$location', function ($sc
 	//$scope.bg = '/img/background/02.jpg';
 
 }]);
-
 
 
 app.directive('backImg', function(){
