@@ -54,6 +54,42 @@
             <!--</div>-->
         <!--</form>-->
         <ul class="nav navbar-nav navbar-right">
+            <li>
+                <select>
+                    <option value="-13:00">GMT -12:00 US-Baker Islands</option>
+                    <option value="-12:00">GMT -11:00 American Samoa</option>
+                    <option value="-11:00">GMT -10:00 Papeete,Pacific/Honolulu </option>
+                    <option value="-10:00">GMT -09:00 Anchorage</option>
+                    <option value="-09:00">GMT -08:00 Los_Angeles</option>
+                    <option value="-08:00">GMT -07:00 Phoenix,calgary </option>
+                    <option value="-07:00">GMT -06:00 Chicago</option>
+                    <option value="-06:00">GMT -05:00 New_York</option>
+                    <option value="-05:00">GMT -04:00 Santiago</option>
+                    <option value="-04:30">GMT -03:30 St. John's</option>
+                    <option value="-04:00">GMT -03:00 Buenos Aires</option>
+                    <option value="-02:00">GMT -01:00 Denmark</option>
+                    <option value="-01:00">BST -01:00 GMT/UTC</option>
+                    <option value="+00:00" selected="selected">BST +00:00 GMT +01:00 London </option>
+                    <option value="+00:00">GMT +01:00 EBerlin</option>
+                    <option value="+01:00">GMT +02:00 Helsinki </option>
+                    <option value="+02:00">GMT +03:00 Moscow</option>
+                    <option value="+02:30">GMT +03:30 Tehran</option>
+                    <option value="+03:00">GMT +04:00 Dubai</option>
+                    <option value="+03:30">GMT +04:30 Kabul</option>
+                    <option value="+03:45">GMT +04:45</option>
+                    <option value="+04:00">GMT +05:00 Tashkent</option>
+                    <option value="+04:30">GMT +05:30 Calcutta</option>
+                    <option value="+05:00">GMT +06:00 Dhaka</option>
+                    <option value="+06:00">GMT +07:00 Jakarta</option>
+                    <option value="+07:00">GMT +08:00 Singapur,Kuala Lumpur</option>
+                    <option value="+07:30">GMT +08:30 North Koria</option>
+                    <option value="+08:00">GMT +9:00 Tokyo</option>
+                    <option value="+08:30">GMT +9:30 Adelaide</option>
+                    <option value="+09:00">GMT +10:00 Sydney</option>
+                    <option value="+10:00">GMT +11:00 Noumea</option>
+                    <option value="+11:00">GMT +12:00 Auckland</option>
+                </select>
+            </li>
             <li><a href=""><span class="glyphicon glyphicon-search"></span></a></li>
             <li><a href="">{{ clock | date:'HH:mm:ss'}}</a></li>
             <!--<li><a href=""><span class="glyphicon glyphicon-th"></span></a></li>-->
@@ -74,6 +110,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -81,6 +118,7 @@
 
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="js/collapse.js"></script>
     <script src="js/routes.js"></script>
 
 

@@ -7,27 +7,41 @@ app.controller("navController", ['$scope', '$interval', function ($scope, $inter
 }]);
 
 app.controller("startController", ['$scope', '$http', '$location', function ($scope, $http, $location) {
+
+
 		$scope.today = new Date();
 		// $scope.today = date;
-	
-	var skysport = document.getElementById("skysport")
-	skysport.addEventListener('click', function(){
 
-    $scope.$apply(function() {
-		console.log("update time clicked");
-		$http({
-	    method : "GET",
-	    url : "templates/partials/channel-view/inner-frame.htm"
-		}).then(function mySucces(response) {
-			document.getElementsByClassName("stream_main").outerHTML = "";
-			$scope.myWelcome = response.data;
-		}, function myError(response) {
-			$scope.myWelcome = response.statusText;
-		});
+    // var skysport = document.getElementById("skysport")
+    // skysport.addEventListener('click', function(){
+    //
+    // $scope.$apply(function() {
+    //
+		//  $scope.myLink = "templates/partials/channel-view/inner-frame.htm";
 
-		});
-	})
+		// console.log("update time clicked");
+		// $http({
+        // method : "GET",
+        // url : "templates/partials/channel-view/inner-frame.htm"
+		// }).then(function mySucces(response) {
+		// 	document.getElementsByClassName("stream_main").outerHTML = "";
+		// 	$scope.myWelcome = response.data;
+		// }, function myError(response) {
+		// 	$scope.myWelcome = response.statusText;
+		// });
+        //
+        // });
+	// })
 }]);
+
+// app.directive('videoFrame', function() {
+// 	return {
+// 		// template:"<iframe frameborder='0' marginheight='0' marginwidth='0' height='490' src='http://crichd.tv/bt-sport-1-live-stream-hduk.php' scrolling='no' width='620'" +
+// 		"webkitallowfullscreen mozallowfullscreen allowfullscreen'>Your Browser Do not Support Iframe </iframe>"
+// 	}
+// });
+
+
 
 app.controller("movieController", ['$scope',  function ($scope) {
 	$scope.msg = "Most popular highlights";
